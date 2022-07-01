@@ -21,6 +21,15 @@ body {
 /* Header для двох сторінок + частина Footer*/
 .logo {
   font-family: var(--additional-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: #2196f3;
+  text-decoration: none;
+}
+.logo-accent {
+  color: var(--dark-txt-color);
 }
 
 .header-pages {
@@ -28,6 +37,7 @@ body {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .header-pages:hover,
 .header-pages:focus {
@@ -39,6 +49,7 @@ body {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--grey-txt-color);
+  text-decoration: none;
 }
 .contacts:hover,
 .contacts:focus {
@@ -71,16 +82,17 @@ body {
 }
 
 /* Фільтри-кнопки на сторінці Портфоліо*/
-.button-filter {
+.filters-button {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
   letter-spacing: 0.03em;
+  border: #ffffff;
   cursor: pointer;
 }
 
-.button-filter:hover,
-.button-filter:focus {
+.filters-button:hover,
+.filters-button:focus {
   color: var(--white-txt-color);
   background-color: var(--accent-color);
 }
@@ -88,6 +100,18 @@ body {
 .list {
   list-style: none;
   text-decoration: none;
+}
+.header-pages {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--dark-txt-color);
+  text-decoration: none;
+}
+.header-pages:hover,
+.header-pages:focus {
+  color: #2196f3;
 }
 
 /* Особливості компанії */
@@ -106,28 +130,40 @@ body {
 }
 /* Наша команда */
 .heading-two {
-    font-weight: 700;
-font-size: 36px;
-line-height: calc(42 / 36);
-text-align: center;
-letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .team-name {
-    font-weight: 500;
-font-size: 16px;
-line-height: calc(19 / 16);
-text-align: center;
-letter-spacing: 0.03em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .team-job {
-    font-size: 16px;
-    line-height: calc(19 / 16);
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--grey-txt-color)
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--grey-txt-color);
 }
-
 
 /* Footer */
 
 /* Стилі для portfolio.html */
+/* Products */
+.products-item {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.products-descr {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  color: var(--grey-txt-color);
+}
