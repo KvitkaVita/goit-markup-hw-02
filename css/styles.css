@@ -1,10 +1,133 @@
+:root {
+  /* fonts */
+  --main-font: 'Roboto', sans-serif;
+  --additional-font: 'Raleway', sans-serif;
+  /* text colors */
+  --dark-txt-color: #212121;
+  --grey-txt-color: #757575;
+  --white-txt-color: #ffffff;
+  /* bg colors */
+  --main-bgc: #ffffff;
+  --additional-bgc: #2f303a;
+  --accent-color: #2196f3;
+}
+
+body {
+  font-family: var(--main-font);
+  background: var(--main-bgc);
+}
+
 /* Стилі для index.html */
+/* Header для двох сторінок + частина Footer*/
+.logo {
+  font-family: var(--additional-font);
+}
+
+.header-pages {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+.header-pages:hover,
+.header-pages:focus {
+  color: var(--accent-color);
+}
+.contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--grey-txt-color);
+}
+.contacts:hover,
+.contacts:focus {
+  color: var(--accent-color);
+}
+
+/* Ефективні рішення  */
+.heading {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-txt-color);
+  background: var(--additional-bgc);
+
+  /* Кнопка Замовити послугу */
+}
+.button {
+  color: var(--white-txt-color);
+  background-color: var(--accent-color);
+  border: #2196f3;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #188ce8;
+}
+
+/* Фільтри-кнопки на сторінці Портфоліо*/
+.button-filter {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.button-filter:hover,
+.button-filter:focus {
+  color: var(--white-txt-color);
+  background-color: var(--accent-color);
+}
+/* Усі списки */
+.list {
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Особливості компанії */
+.features-item {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.features-item-descr {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--grey-txt-color);
+}
+/* Наша команда */
+.heading-two {
+    font-weight: 700;
+font-size: 36px;
+line-height: calc(42 / 36);
+text-align: center;
+letter-spacing: 0.03em;
+}
+.team-name {
+    font-weight: 500;
+font-size: 16px;
+line-height: calc(19 / 16);
+text-align: center;
+letter-spacing: 0.03em;
+}
+.team-job {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--grey-txt-color)
+}
 
 
-
-
-
-
-
+/* Footer */
 
 /* Стилі для portfolio.html */
