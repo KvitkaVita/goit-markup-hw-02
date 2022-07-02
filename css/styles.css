@@ -6,6 +6,7 @@
   --dark-txt-color: #212121;
   --grey-txt-color: #757575;
   --white-txt-color: #ffffff;
+  --accent-txt-color: #2196f3;
   /* bg colors */
   --main-bgc: #ffffff;
   --additional-bgc: #2f303a;
@@ -32,16 +33,22 @@ body {
   color: var(--dark-txt-color);
 }
 
-.header-pages {
+.site-nav {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   text-decoration: none;
+  color: var(--dark-txt-color);
 }
-.header-pages:hover,
-.header-pages:focus {
+
+.site-nav:hover,
+.site-nav:focus {
   color: var(--accent-color);
+}
+
+.list .site-nav.current {
+  color: var(--accent-txt-color);
 }
 .contacts {
   font-weight: 500;
@@ -74,6 +81,10 @@ body {
   background-color: var(--accent-color);
   border: #2196f3;
   cursor: pointer;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  font-family: inherit;
 }
 
 .button:hover,
@@ -84,6 +95,7 @@ body {
 /* Фільтри-кнопки на сторінці Портфоліо*/
 .filters-button {
   font-weight: 500;
+  font-family: inherit;
   font-size: 16px;
   line-height: calc(26 / 16);
   letter-spacing: 0.03em;
@@ -101,6 +113,7 @@ body {
   list-style: none;
   text-decoration: none;
 }
+
 .header-pages {
   font-weight: 500;
   font-size: 14px;
@@ -109,6 +122,7 @@ body {
   color: var(--dark-txt-color);
   text-decoration: none;
 }
+
 .header-pages:hover,
 .header-pages:focus {
   color: #2196f3;
@@ -122,12 +136,14 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
 .features-item-descr {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--grey-txt-color);
 }
+
 /* Наша команда */
 .heading-two {
   font-weight: 700;
@@ -138,7 +154,6 @@ body {
 }
 .team-name {
   font-weight: 500;
-  font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
@@ -152,7 +167,25 @@ body {
 }
 
 /* Footer */
-
+.contact-info {
+  font-style: normal;
+}
+.bottom {
+  background-color: var(--additional-bgc);
+  color: #ffffff;
+}
+.bottom-logo {
+  font-family: var(--additional-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: #2196f3;
+  text-decoration: none;
+}
+.bottom-logo-accent {
+  color: var(--white-txt-color);
+}
 /* Стилі для portfolio.html */
 /* Products */
 .products-item {
@@ -162,7 +195,6 @@ body {
   letter-spacing: 0.06em;
 }
 .products-descr {
-  font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--grey-txt-color);
