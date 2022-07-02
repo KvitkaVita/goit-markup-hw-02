@@ -26,7 +26,7 @@ body {
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-txt-color);
   text-decoration: none;
 }
 .logo-accent {
@@ -79,7 +79,7 @@ body {
 .button {
   color: var(--white-txt-color);
   background-color: var(--accent-color);
-  border: #2196f3;
+  border: var(--accent-color);
   cursor: pointer;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -99,7 +99,7 @@ body {
   font-size: 16px;
   line-height: calc(26 / 16);
   letter-spacing: 0.03em;
-  border: #ffffff;
+  border: transparent;
   cursor: pointer;
 }
 
@@ -125,7 +125,7 @@ body {
 
 .header-pages:hover,
 .header-pages:focus {
-  color: #2196f3;
+  color: var(--accent-txt-color);
 }
 
 /* Особливості компанії */
@@ -149,7 +149,6 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
-  text-align: center;
   letter-spacing: 0.03em;
 }
 .team-name {
@@ -172,7 +171,7 @@ body {
 }
 .bottom {
   background-color: var(--additional-bgc);
-  color: #ffffff;
+  color: var(--white-txt-color);
 }
 .bottom-logo {
   font-family: var(--additional-font);
@@ -180,12 +179,22 @@ body {
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-txt-color);
   text-decoration: none;
 }
 .bottom-logo-accent {
   color: var(--white-txt-color);
 }
+  .bottom-contacts {
+    font-size: 14px;
+    line-height: calc(24 /14);
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .bottom-contacts:hover,
+  .bottom-contacts:focus {
+    color: var(--accent-color);
+  }
 /* Стилі для portfolio.html */
 /* Products */
 .products-item {
